@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-screen-xl m-auto">
+    <section class="flex justify-center">
+            <div class="h-20 w-20 bg-accent flex items-center justify-center mt-20">
+                    <p class="text-5xl" id="clock">0</p>
+            </div>     
+    </section>
+    <section>
+        <div class="max-w-screen-sm m-auto grid grid-cols-3 gap-10 mt-20">
+            <button class="btn btn-primary" onclick="start()">Start</button>
+            <button class="btn btn-success" onclick="stop()">Stop</button>
+            <button class="btn btn-error" onclick="reset()">Reset</button>
+
+        </div>
+    </section>
+
+    
+    <script src="clock.js"></script>
+</body>
+</html>
